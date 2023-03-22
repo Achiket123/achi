@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Front page</title>
+    
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" media="all" />
+  </head>
+  <body>
+<div class="navigation">
+  <nav>
+     
+       
+     <a href="/"><img class="logo" src="/static/profile/logo.png" alt="" /><p class="nav-txt">SARVaVIDYA</p></a>
+    
+   
+    </form>
+  </nav></div>
+  <div>
+    
+  <form  action="#" method="post" class="form" accept-charset="utf-8">
+  
+<input class="search"  id="search" name="search" placeholder="SEARCH">
+<button type="submit" ><img class="button-img" src="static/profile/search.png" /></button>
+
+
+  </form>
+</div>
+
+
+
+{% block content %}
+  
+{% endblock content %}
+
+
+
+
+
+
+
+
+<footer class="footer">
+ <p class="txt"> This website is made by Achiket</p>
+ <p class="txt" >all the pdfs belongs to ncert help</p>
+ <a class="txt anchor" name="about_page" href="{{ url_for('about', _anchor='about.html') }}">About</a>
+
+
+ </form>
+</footer>
+
+
+  </body>
+</html>

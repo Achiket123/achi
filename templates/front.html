@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+        {% block content %}
+
+        
+
+
+    {% for f in files %}
+<span>
+  <div class="pdf_layout">
+    
+    
+     
+      <a href="static/class11/Chemistry/{{f}}" class="anchor"><img src="{{ url_for('static', filename='profile/chemistry.png') }}" class="card" alt="" ><p>{{f}}</p></a>
+
+      <button onclick="location.href='static/class11/Chemistry/{{f}}'" class="buttons">Download</button>
+      
+
+    
+    </div></span>
+               {% endfor %}
+
+        
+
+         
+        
+
+        
+{% endblock content %}
